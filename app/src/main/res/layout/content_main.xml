@@ -17,7 +17,8 @@
             android:layout_centerInParent="true"
             android:orientation="vertical"
             android:padding="10dp"
-            android:weightSum="1">
+            android:weightSum="1"
+            tools:ignore="MissingConstraints">
 
 
         <TextView

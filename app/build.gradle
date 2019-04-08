@@ -21,6 +21,10 @@ android {
         defaultToAppBundles = true // ./gradlew publish (publishes bundle and release notes)
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
 
     compileSdkVersion 28
     defaultConfig {
@@ -75,7 +79,7 @@ dependencies {
 
 
     implementation "org.jetbrains.anko:anko:$anko_version"
-    implementation "com.google.android.gms:play-services-maps:16.0.0"
+    implementation "com.google.android.gms:play-services-maps:16.1.0"
 
 }
 
