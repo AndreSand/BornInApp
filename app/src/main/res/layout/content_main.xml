@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_main"
+        tools:context=".MainActivity">
+
+
+    <LinearLayout
+            android:id="@+id/form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="1">
+
+
+        <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mom:"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+
+        <EditText
+                android:layout_below="@+id/textView1"
+                android:id="@+id/edLocationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:hint="was born in?"
+                android:textColorHint="#bbbbbb" />
+
+        <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="Dad:"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+        <EditText
+                android:layout_below="@+id/textView2"
+                android:id="@+id/edLocationName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.86"
+                android:ellipsize="end"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:hint="was born in?"
+                android:textColorHint="#bbbbbb" />
+
+        <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="You: "
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+                android:layout_below="@+id/textView3"
+                android:id="@+id/edLocationName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.86"
+                android:ellipsize="end"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:hint="was born in?"
+                android:textColorHint="#bbbbbb" />
+
+
+
+        <Button
+                android:id="@+id/btGoToMap"
+                android:layout_below="@+id/form_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:padding="10dp"
+                android:background="#00AA8D"
+                android:textColor="#ffffff"
+                android:text="Go to Map"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
