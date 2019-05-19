@@ -18,15 +18,26 @@
             android:orientation="vertical"
             android:padding="10dp"
             android:weightSum="1"
-            tools:ignore="MissingConstraints">
+            tools:ignore="MissingConstraints" tools:layout_editor_absoluteY="-1dp" tools:layout_editor_absoluteX="28dp">
 
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="193dp" app:srcCompat="@mipmap/ic_launcher" android:id="@+id/imageView"
+        />
 
         <TextView
+                android:text="Enter below born places:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"/>
+        <TextView
+                android:layout_marginTop="10dp"
                 android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mom:"
-                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="Mom"
                 android:textAppearance="?android:attr/textAppearanceMedium"
         />
 
@@ -39,16 +50,15 @@
                 android:ellipsize="end"
                 android:inputType="textCapWords"
                 android:maxLines="1"
-                android:padding="10dp"
-                android:hint="was born in?"
-                android:textColorHint="#bbbbbb" />
+                android:padding="8dp"
+                android:hint="born in?"
+                android:textColorHint="#bbbbbb"/>
 
         <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@mipmap/ic_launcher"
-                android:text="Dad:"
+                android:text="Dad"
                 android:textAlignment="center"
                 android:textAppearance="?android:attr/textAppearanceMedium"
         />
@@ -62,16 +72,15 @@
                 android:ellipsize="end"
                 android:inputType="textCapWords"
                 android:maxLines="1"
-                android:padding="10dp"
-                android:hint="was born in?"
-                android:textColorHint="#bbbbbb" />
+                android:padding="8dp"
+                android:hint="born in?"
+                android:textColorHint="#bbbbbb"/>
 
         <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@mipmap/ic_launcher"
-                android:text="You: "
+                android:text="You"
                 android:textAppearance="?android:attr/textAppearanceMedium"/>
 
         <EditText
@@ -83,36 +92,23 @@
                 android:ellipsize="end"
                 android:inputType="textCapWords"
                 android:maxLines="1"
-                android:padding="10dp"
-                android:hint="was born in?"
-                android:textColorHint="#bbbbbb" />
-
-
-
+                android:padding="8dp"
+                android:hint="born in?"
+                android:textColorHint="#bbbbbb"/>
         <Button
                 android:id="@+id/btGoToMap"
                 android:layout_below="@+id/form_layout"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="70dp"
-                android:padding="10dp"
-                android:background="#00AA8D"
+                android:padding="8dp"
+                android:background="#133337"
                 android:textColor="#ffffff"
-                android:text="Go to Map"
+                android:text="Show Map"
+
                 android:textAllCaps="false"
-                app:layout_constraintBottom_toTopOf="parent"
-                app:layout_constraintEnd_toStartOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="0dp" />
-
-
-
-
-
+                tools:layout_editor_absoluteY="0dp" android:gravity="center"/>
 
     </LinearLayout>
-
-
 </android.support.constraint.ConstraintLayout>

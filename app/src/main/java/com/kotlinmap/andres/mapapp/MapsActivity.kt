@@ -29,7 +29,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
         bShare.setOnClickListener {
-            toast("share")
+            // toast("share")
             val momBornIn = intent.getStringExtra("name")
             val dadBornIn = intent.getStringExtra("name2")
             val iWasBornIn = intent.getStringExtra("name3")
@@ -45,11 +45,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Sharing born locations")
             shareIntent.putExtra(
                 android.content.Intent.EXTRA_TEXT,
-                "Mom born in: " + momBornIn + ", https://en.wikipedia.org/wiki/" + urlMomBornIn
-                        + " Dad born in: " + dadBornIn + ", https://en.wikipedia.org/wiki/" + urlDadBornIn
-                        + " I was born in: " + iWasBornIn + ", https://en.wikipedia.org/wiki/" + urlIWasBornIn
-                        + "\n\n"
-                        + "download our app from this link"
+                "Mom born in " + momBornIn + " https://en.wikipedia.org/wiki/" + urlMomBornIn + " ,"
+                        + " Dad born in " + dadBornIn + " https://en.wikipedia.org/wiki/" + urlDadBornIn + " ,"
+                        + " I was born in " + iWasBornIn + " https://en.wikipedia.org/wiki/" + urlIWasBornIn + " ,"
+                        + "\n"
+                        + "\n"
+                        + "Download the BornIn app here: "
                         + "https://play.google.com/store/apps/details?id=com.bornin.androidapp"
             )
             startActivity(Intent.createChooser(shareIntent, "share via"))

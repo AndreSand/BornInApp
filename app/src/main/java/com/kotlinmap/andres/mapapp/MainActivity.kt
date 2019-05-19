@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 //            }
 
             // check if App it's from unknown market; kill app. No app sideload allowed.
-            toast("borninapp" + "getAppStore: " + getAppStore(this))
+            // toast("borninapp" + "getAppStore: " + getAppStore(this))
             Log.v("borninapp", "MainActivity: getAppStore: " + getAppStore(this))
 
 
