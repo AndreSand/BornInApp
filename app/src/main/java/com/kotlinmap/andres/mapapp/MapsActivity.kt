@@ -43,13 +43,15 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             shareIntent.action = Intent.ACTION_SEND
             shareIntent.type = "text/plain"
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Sharing born locations")
-            shareIntent.putExtra(android.content.Intent.EXTRA_TEXT,
+            shareIntent.putExtra(
+                android.content.Intent.EXTRA_TEXT,
                 "Mom born in: " + momBornIn + ", https://en.wikipedia.org/wiki/" + urlMomBornIn
                         + " Dad born in: " + dadBornIn + ", https://en.wikipedia.org/wiki/" + urlDadBornIn
                         + " I was born in: " + iWasBornIn + ", https://en.wikipedia.org/wiki/" + urlIWasBornIn
                         + "\n\n"
                         + "download our app from this link"
-                        + "https://play.google.com/store/apps/details?id=com.bornin.androidapp")
+                        + "https://play.google.com/store/apps/details?id=com.bornin.androidapp"
+            )
             startActivity(Intent.createChooser(shareIntent, "share via"))
         }
     }
@@ -97,10 +99,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.addMarker(MarkerOptions().position(location2).title(name2))
         mMap.addMarker(MarkerOptions().position(location3).title(name3))
 
-        toast("andres name $name, name2 :$name2")
+        // toast("andres name $name, name2 :$name2")
 
-
-        //on maeker click opens new activity
+        // on marker onClick opens new activity
         mMap.setOnMarkerClickListener { marker ->
             //                val i = Intent(this@MapsActivity, FillinForm::class.java)
             //                startActivity(i)

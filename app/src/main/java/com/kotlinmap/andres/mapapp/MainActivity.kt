@@ -28,12 +28,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+        // android:visibility="gone" below button is to test getAppStore()
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Work in Progress", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
             toast("borninapp" + "getAppStore: " + getAppStore(this))
-            Log.v("borninapp", "MainActivity: getAppStore: "+ getAppStore(this))
-
+            Log.v("borninapp", "MainActivity: getAppStore: " + getAppStore(this))
         }
 
         btGoToMap.setOnClickListener {
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
             // check if App it's from unknown market; kill app. No app sideload allowed.
             toast("borninapp" + "getAppStore: " + getAppStore(this))
-            Log.v("borninapp", "MainActivity: getAppStore: "+ getAppStore(this))
+            Log.v("borninapp", "MainActivity: getAppStore: " + getAppStore(this))
 
 
             //Get location2
@@ -77,7 +77,10 @@ class MainActivity : AppCompatActivity() {
             i.putExtra("long3", coordinates3?.longitude.toString())
 
 //            if (locationName == null|| locationName2 == null || locationName3 ==null) {
-            if (!checkTextLength(edLocationName) || !checkTextLength(edLocationName2) || !checkTextLength(edLocationName3))
+            if (!checkTextLength(edLocationName) || !checkTextLength(edLocationName2) || !checkTextLength(
+                    edLocationName3
+                )
+            )
                 toast("Fields cannot be empty!")
             else
                 startActivity(i)
