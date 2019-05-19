@@ -16,10 +16,10 @@ Using Android Studio 3.5 Beta 1, Kotlin, and gradle 4.10
 ## Demo
 
 ## Enter info:
-<img src='XYZ.png' title='Enter info: ' width='' alt='Enter info: ' />
+<img src='map_form.png' title='Enter info: ' width='' alt='Enter info: ' />
 
 ## Map shows born locations:
-<img src='XYZmap.png' title='Map shows born locations: ' width='' alt='Map shows born locations' />
+<img src='map.png' title='Map shows born locations: ' width='' alt='Map shows born locations' />
 
 
 ## Resources
