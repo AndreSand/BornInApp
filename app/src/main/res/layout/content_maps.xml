@@ -24,14 +24,16 @@
             android:id="@+id/bShare"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:background="#133337"
+            android:background="@color/colorPrimaryDark"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:padding="8dp"
-            android:text="Share map info"
+            android:text="Share"
             android:gravity="center"
             android:textColor="#ffffff"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="43dp"/>
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="43dp"
+            android:fontFamily="@font/roboto_mono_light_italic" android:textSize="18sp"
+    />
 
 </android.support.constraint.ConstraintLayout>

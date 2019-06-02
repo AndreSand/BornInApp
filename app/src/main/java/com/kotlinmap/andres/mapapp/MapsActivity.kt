@@ -3,7 +3,7 @@ package com.kotlinmap.andres.mapapp
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatActivity
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -11,6 +11,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
+import kotlinx.android.synthetic.main.activity_main.*
 
 import kotlinx.android.synthetic.main.content_maps.*
 import org.jetbrains.anko.toast
@@ -22,6 +23,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maps)
+        setSupportActionBar(toolbar)
+        title = "Born In Map"
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         // 2019 fix https://www.codesd.com/item/kotlin-with-map-in-android.html add ?
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?

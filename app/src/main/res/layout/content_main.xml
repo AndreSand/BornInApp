@@ -27,11 +27,12 @@
         />
 
         <TextView
-                android:text="Enter below born places:"
+                android:text="Enter below born places to show on map, and share."
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView"/>
+                android:id="@+id/textView" android:fontFamily="@font/roboto_mono_light_italic"
+                android:textColor="@color/colorPrimaryDark" android:textStyle="bold"/>
         <TextView
                 android:layout_marginTop="10dp"
                 android:id="@+id/textView1"
@@ -39,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:text="Mom"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-        />
+                android:fontFamily="@font/roboto_mono_light_italic" android:textStyle="bold"/>
 
 
         <EditText
@@ -51,8 +52,8 @@
                 android:inputType="textCapWords"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:hint="born in?"
-                android:textColorHint="#bbbbbb"/>
+                android:hint="Enter born location"
+                android:textColorHint="#bbbbbb" android:fontFamily="@font/roboto_mono_light_italic"/>
 
         <TextView
                 android:id="@+id/textView2"
@@ -61,7 +62,7 @@
                 android:text="Dad"
                 android:textAlignment="center"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-        />
+                android:fontFamily="@font/roboto_mono_light_italic" android:textStyle="bold"/>
 
         <EditText
                 android:layout_below="@+id/textView2"
@@ -73,15 +74,16 @@
                 android:inputType="textCapWords"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:hint="born in?"
-                android:textColorHint="#bbbbbb"/>
+                android:hint="Enter born location"
+                android:textColorHint="#bbbbbb" android:fontFamily="@font/roboto_mono_light_italic"/>
 
         <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="You"
-                android:textAppearance="?android:attr/textAppearanceMedium"/>
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:fontFamily="@font/roboto_mono_light_italic" android:textStyle="bold"/>
 
         <EditText
                 android:layout_below="@+id/textView3"
@@ -93,8 +95,8 @@
                 android:inputType="textCapWords"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:hint="born in?"
-                android:textColorHint="#bbbbbb"/>
+                android:hint="Enter born location"
+                android:textColorHint="#bbbbbb" android:fontFamily="@font/roboto_mono_light_italic"/>
         <Button
                 android:id="@+id/btGoToMap"
                 android:layout_below="@+id/form_layout"
@@ -102,13 +104,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="70dp"
                 android:padding="8dp"
-                android:background="#133337"
+                android:background="@color/colorAccent"
                 android:textColor="#ffffff"
                 android:text="Show Map"
 
                 android:textAllCaps="false"
                 tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="0dp" android:gravity="center"/>
+                tools:layout_editor_absoluteY="0dp" android:gravity="center"
+                android:fontFamily="@font/roboto_mono_light_italic" android:textSize="18sp" android:textStyle="bold"
+                android:textAlignment="center"/>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
