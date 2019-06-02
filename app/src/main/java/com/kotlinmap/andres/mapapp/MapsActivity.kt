@@ -1,19 +1,26 @@
 package com.kotlinmap.andres.mapapp
 
 import android.content.Intent
+import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity;
+import android.os.Environment.getExternalStorageDirectory
+import android.support.v7.app.AppCompatActivity
+import android.util.Log.e
+import android.view.View
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
-
 import kotlinx.android.synthetic.main.content_maps.*
 import org.jetbrains.anko.toast
+import java.io.File
+import java.io.FileNotFoundException
+import java.io.FileOutputStream
+import java.io.IOException
+
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -29,6 +36,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
         bShare.setOnClickListener {
+
+            val bitmap = takeScreenshot()
+            saveBitmap(bitmap)
+
             // toast("share")
             val momBornIn = intent.getStringExtra("name")
             val dadBornIn = intent.getStringExtra("name2")
@@ -116,5 +127,28 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.moveCamera(CameraUpdateFactory.newLatLng(location1))
     }
 
+    private fun takeScreenshot(): Bitmap {
+        val rootView = findViewById<View>(android.R.id.content).getRootView()
+        rootView.setDrawingCacheEnabled(true)
+
+//        toast("take screenshot")
+        return rootView.getDrawingCache()
+    }
+
+    private fun saveBitmap(bitmap: Bitmap) {
+
+        val imagePath = File(getExternalStorageDirectory(), "/screenshot.png")
+        val fos: FileOutputStream
+        try {
+            fos = FileOutputStream(imagePath)
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos)
+            fos.flush()
+            fos.close()
+        } catch (e: FileNotFoundException) {
+            e("GREC", "error", e)
+        } catch (e: IOException) {
+            e("GREC", "error", e)
+        }
+    }
 
 }
