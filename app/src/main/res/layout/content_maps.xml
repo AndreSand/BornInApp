@@ -31,9 +31,12 @@
             android:text="Share"
             android:gravity="center"
             android:textColor="#ffffff"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="43dp"
-            android:fontFamily="@font/roboto_mono_light_italic" android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="43dp"
+            android:textSize="24sp"
     />
 
 </android.support.constraint.ConstraintLayout>

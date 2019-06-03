@@ -23,16 +23,19 @@
 
         <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="193dp" app:srcCompat="@mipmap/ic_launcher" android:id="@+id/imageView"
+                android:layout_height="200dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageView"
         />
 
         <TextView
-                android:text="Enter below born places to show on map, and share."
+                android:text="Enter below fields to show on map"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView" android:fontFamily="@font/roboto_mono_light_italic"
-                android:textColor="@color/colorPrimaryDark" android:textStyle="bold"/>
+                android:id="@+id/textView" android:fontFamily="sans-serif-medium"
+                android:textColor="#ffffff" android:textStyle="bold" android:textAlignment="center"
+                android:textSize="25sp"/>
         <TextView
                 android:layout_marginTop="10dp"
                 android:id="@+id/textView1"
@@ -40,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:text="Mom"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:fontFamily="@font/roboto_mono_light_italic" android:textStyle="bold"/>
+                android:fontFamily="casual" android:textStyle="bold" android:textSize="21sp"/>
 
 
         <EditText
@@ -53,7 +56,9 @@
                 android:maxLines="1"
                 android:padding="8dp"
                 android:hint="Enter born location"
-                android:textColorHint="#bbbbbb" android:fontFamily="@font/roboto_mono_light_italic"/>
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif-medium"/>
 
         <TextView
                 android:id="@+id/textView2"
@@ -62,7 +67,7 @@
                 android:text="Dad"
                 android:textAlignment="center"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:fontFamily="@font/roboto_mono_light_italic" android:textStyle="bold"/>
+                android:fontFamily="casual" android:textStyle="bold" android:textSize="21sp"/>
 
         <EditText
                 android:layout_below="@+id/textView2"
@@ -75,7 +80,9 @@
                 android:maxLines="1"
                 android:padding="8dp"
                 android:hint="Enter born location"
-                android:textColorHint="#bbbbbb" android:fontFamily="@font/roboto_mono_light_italic"/>
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif-medium"/>
 
         <TextView
                 android:id="@+id/textView3"
@@ -83,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:text="You"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:fontFamily="@font/roboto_mono_light_italic" android:textStyle="bold"/>
+                android:fontFamily="casual" android:textStyle="bold" android:textSize="21sp"/>
 
         <EditText
                 android:layout_below="@+id/textView3"
@@ -96,7 +103,9 @@
                 android:maxLines="1"
                 android:padding="8dp"
                 android:hint="Enter born location"
-                android:textColorHint="#bbbbbb" android:fontFamily="@font/roboto_mono_light_italic"/>
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif-medium"/>
         <Button
                 android:id="@+id/btGoToMap"
                 android:layout_below="@+id/form_layout"
@@ -111,8 +120,8 @@
                 android:textAllCaps="false"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="0dp" android:gravity="center"
-                android:fontFamily="@font/roboto_mono_light_italic" android:textSize="18sp" android:textStyle="bold"
-                android:textAlignment="center"/>
+                android:fontFamily="sans-serif-medium" android:textSize="24sp"
+                android:textAlignment="center" android:textStyle="bold"/>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
