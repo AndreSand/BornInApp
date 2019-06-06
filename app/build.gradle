@@ -15,7 +15,7 @@ android {
 //        releaseStatus = "inProgress"
 
 
-        track = "production" // or 'internal', 'rollout' or 'beta' or 'alpha' or 'production'
+        track = "internal" // or 'internal', 'rollout' or 'beta' or 'alpha' or 'production'
         serviceAccountEmail = "mymapapp-gradle-release@api-7285672962128655255-471651.iam.gserviceaccount.com"
         serviceAccountCredentials = file('Google-Play-Android-Developer-41c5700935de.p12')
         defaultToAppBundles = true // ./gradlew publish (publishes bundle and release notes)
