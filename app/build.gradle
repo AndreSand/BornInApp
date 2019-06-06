@@ -31,8 +31,8 @@ android {
         applicationId "com.bornin.androidapp"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 60
-        versionName "1.60"
+        versionCode 62
+        versionName "1.62"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
