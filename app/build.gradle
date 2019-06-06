@@ -17,7 +17,7 @@ android {
 
         track = "production" // or 'internal', 'rollout' or 'beta' or 'alpha' or 'production'
         serviceAccountEmail = "mymapapp-gradle-release@api-7285672962128655255-471651.iam.gserviceaccount.com"
-        serviceAccountCredentials = file(p12_KEY)
+        serviceAccountCredentials = file('Google-Play-Android-Developer-41c5700935de.p12')
         defaultToAppBundles = true // ./gradlew publish (publishes bundle and release notes)
     }
 
@@ -37,13 +37,13 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file(RELEASE_STORE_FILE)
+            storeFile file('BornIn-android-key')
             storePassword RELEASE_STORE_PASSWORD
             keyAlias RELEASE_KEY_ALIAS
             keyPassword RELEASE_KEY_PASSWORD
         }
         debug {
-            storeFile file(RELEASE_STORE_FILE)
+            storeFile file('BornIn-android-key')
             storePassword RELEASE_STORE_PASSWORD
             keyAlias RELEASE_KEY_ALIAS
             keyPassword RELEASE_KEY_PASSWORD
