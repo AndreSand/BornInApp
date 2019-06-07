@@ -31,8 +31,12 @@ android {
         applicationId "com.bornin.androidapp"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 62
-        versionName "1.62"
+
+        Integer teamCityBuildNumber = System.getenv("BITRISE_BUILD_NUMBER") as Integer
+        // versionCode is check by Google Play Store, needs to increment
+        // BITRISE_BUILD_NUMBER=63 ./gradlew publishReleaseBundle
+        versionCode teamCityBuildNumber ?: 1
+        versionName "1.63"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
