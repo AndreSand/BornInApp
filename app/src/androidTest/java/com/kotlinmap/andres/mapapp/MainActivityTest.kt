@@ -66,78 +66,78 @@ class MainActivityTest {
         )
         appCompatEditText2.perform(pressImeActionButton())
 
-        val appCompatEditText3 = onView(
-            allOf(
-                withId(R.id.edLocationName2),
-                childAtPosition(
-                    allOf(
-                        withId(R.id.form_layout),
-                        childAtPosition(
-                            withClassName(`is`("android.support.constraint.ConstraintLayout")),
-                            0
-                        )
-                    ),
-                    5
-                ),
-                isDisplayed()
-            )
-        )
-        appCompatEditText3.perform(replaceText("Mexico"), closeSoftKeyboard())
-
-        val appCompatEditText4 = onView(
-            allOf(
-                withId(R.id.edLocationName2), withText("Mexico"),
-                childAtPosition(
-                    allOf(
-                        withId(R.id.form_layout),
-                        childAtPosition(
-                            withClassName(`is`("android.support.constraint.ConstraintLayout")),
-                            0
-                        )
-                    ),
-                    5
-                ),
-                isDisplayed()
-            )
-        )
-        appCompatEditText4.perform(pressImeActionButton())
-
-        val appCompatEditText5 = onView(
-            allOf(
-                withId(R.id.edLocationName3),
-                childAtPosition(
-                    allOf(
-                        withId(R.id.form_layout),
-                        childAtPosition(
-                            withClassName(`is`("android.support.constraint.ConstraintLayout")),
-                            0
-                        )
-                    ),
-                    7
-                ),
-                isDisplayed()
-            )
-        )
-        appCompatEditText5.perform(replaceText("USA"), closeSoftKeyboard())
-
-
-        val button2 = onView(
-            allOf(
-                withId(R.id.btGoToMap),
-                childAtPosition(
-                    allOf(
-                        withId(R.id.form_layout),
-                        childAtPosition(
-                            IsInstanceOf.instanceOf(android.view.ViewGroup::class.java),
-                            0
-                        )
-                    ),
-                    8
-                ),
-                isDisplayed()
-            )
-        )
-        button2.check(matches(isDisplayed()))
+//        val appCompatEditText3 = onView(
+//            allOf(
+//                withId(R.id.edLocationName2),
+//                childAtPosition(
+//                    allOf(
+//                        withId(R.id.form_layout),
+//                        childAtPosition(
+//                            withClassName(`is`("android.support.constraint.ConstraintLayout")),
+//                            0
+//                        )
+//                    ),
+//                    5
+//                ),
+//                isDisplayed()
+//            )
+//        )
+//        appCompatEditText3.perform(replaceText("Mexico"), closeSoftKeyboard())
+//
+//        val appCompatEditText4 = onView(
+//            allOf(
+//                withId(R.id.edLocationName2), withText("Mexico"),
+//                childAtPosition(
+//                    allOf(
+//                        withId(R.id.form_layout),
+//                        childAtPosition(
+//                            withClassName(`is`("android.support.constraint.ConstraintLayout")),
+//                            0
+//                        )
+//                    ),
+//                    5
+//                ),
+//                isDisplayed()
+//            )
+//        )
+//        appCompatEditText4.perform(pressImeActionButton())
+//
+//        val appCompatEditText5 = onView(
+//            allOf(
+//                withId(R.id.edLocationName3),
+//                childAtPosition(
+//                    allOf(
+//                        withId(R.id.form_layout),
+//                        childAtPosition(
+//                            withClassName(`is`("android.support.constraint.ConstraintLayout")),
+//                            0
+//                        )
+//                    ),
+//                    7
+//                ),
+//                isDisplayed()
+//            )
+//        )
+//        appCompatEditText5.perform(replaceText("USA"), closeSoftKeyboard())
+//
+//
+//        val button2 = onView(
+//            allOf(
+//                withId(R.id.btGoToMap),
+//                childAtPosition(
+//                    allOf(
+//                        withId(R.id.form_layout),
+//                        childAtPosition(
+//                            IsInstanceOf.instanceOf(android.view.ViewGroup::class.java),
+//                            0
+//                        )
+//                    ),
+//                    8
+//                ),
+//                isDisplayed()
+//            )
+//        )
+//        button2.check(matches(isDisplayed()))
     }
 
     private fun childAtPosition(
