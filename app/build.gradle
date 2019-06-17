@@ -67,7 +67,6 @@ android {
     }
 }
 
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -78,7 +77,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    
+
     implementation "org.jetbrains.anko:anko:$anko_version"
     implementation "com.google.android.gms:play-services-maps:16.1.0"
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
