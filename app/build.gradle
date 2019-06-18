@@ -53,9 +53,6 @@ android {
             keyPassword RELEASE_KEY_PASSWORD
         }
     }
-
-
-    
     buildTypes {
         release {
             signingConfig signingConfigs.release
