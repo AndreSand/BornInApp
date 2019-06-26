@@ -22,8 +22,7 @@ android {
     lintOptions {
         abortOnError false
     }
-
-
+    
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.bornin.androidapp"
