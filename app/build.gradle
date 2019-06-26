@@ -13,8 +13,6 @@ android {
 //        track = "production" // or 'internal', 'rollout' or 'beta' or 'alpha' or 'production'
 //        userFraction = 0.5 // only necessary for 'rollout', in this case default is 0.1 (10% of the target)
 //        releaseStatus = "inProgress"
-
-
         track = "internal" // or 'internal', 'rollout' or 'beta' or 'alpha' or 'production'
         serviceAccountEmail = "mymapapp-gradle-release@api-7285672962128655255-471651.iam.gserviceaccount.com"
         serviceAccountCredentials = file('Google-Play-Android-Developer-41c5700935de.p12')
@@ -77,8 +75,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
-
     implementation "org.jetbrains.anko:anko:$anko_version"
     implementation "com.google.android.gms:play-services-maps:16.1.0"
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
