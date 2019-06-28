@@ -66,7 +66,6 @@ class MainActivityTest {
         )
         appCompatEditText2.perform(pressImeActionButton())
 
-      button2.check(matches(isDisplayed()))
     }
 
     private fun childAtPosition(
