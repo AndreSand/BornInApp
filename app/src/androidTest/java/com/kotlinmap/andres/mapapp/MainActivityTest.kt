@@ -65,7 +65,6 @@ class MainActivityTest {
             )
         )
         appCompatEditText2.perform(pressImeActionButton())
-
     }
 
     private fun childAtPosition(
