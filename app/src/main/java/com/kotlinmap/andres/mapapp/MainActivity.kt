@@ -27,7 +27,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+        Log.v("borninapp", "MainActivity: getAppStore: " + getAppStore(this))
 
+        // Login if is from Google Play Store
+        // create class to show getAppStore details
         // android:visibility="gone" below button is to test getAppStore()
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Work in Progress", Snackbar.LENGTH_LONG)
