@@ -32,8 +32,13 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Unit tests
+      - name: Lint debug flavor
         run: bash ./gradlew lintDebug --stacktrace
+      - name: Lint results
+        uses: actions/upload-artifact@v1
+        with:
+          name: app
+           path: app/build/reports/lint-results-debug.html
 
   apk:
     name: Generate APK
