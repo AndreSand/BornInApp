@@ -7,8 +7,7 @@
 ![GitHub Actions](https://github.com/BornInApp/workflows/.github/workflows/android-master.yml/badge.svg)
 
 [![Actions Status](https://github.com/AndreSand/BornInApp/workflows/android-master/badge.svg)](https://github.com/AndreSand/BornInApp/actions)
-
-https://github.com/AndreSand/BornInAppworkflows/android-master/badge.svg
+[![Actions Status](https://github.com/AndreSand/BornInApp/workflows/android/badge.svg)](https://github.com/AndreSand/BornInApp/actions)
 
 ## Code
 Using Android Studio 3.5 Beta 1, Kotlin, and gradle 4.10
