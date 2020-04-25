@@ -1,8 +1,8 @@
 # KotlinLearningMap
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AndreSand_BornInApp&metric=alert_status)](https://sonarcloud.io/dashboard?id=AndreSand_BornInApp)
-[![GitHub Actions](https://github.com/AndreSand/BornInApp/actions/workflows/.github/workflows/android-master.yml/badge.svg)]
-[![GitHub Actions 2](https://github.com/AndreSand/BornInApp/actions/workflows/android-master/badge.svg)]
-[![GitHub Actions 3](https://github.com/AndreSand/BornInApp/workflows/android-master/badge.svg)]
+![GitHub Actions](https://github.com/AndreSand/actions/BornInApp/workflows/android-master/badge.svg)
+![GitHub Actions](https://github.com/AndreSand/actions/BornInApp/workflows/.github/workflows/android-master.yml/badge.svg)
+
 
 ## Code
 Using Android Studio 3.5 Beta 1, Kotlin, and gradle 4.10
