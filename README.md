@@ -3,6 +3,8 @@
 ![GitHub Actions](https://github.com/actions/BornInApp/workflows/android-master/badge.svg)
 ![GitHub Actions](https://github.com/actions/BornInApp/workflows/.github/workflows/android-master.yml/badge.svg)
 
+![GitHub Actions](https://github.com/BornInApp/workflows/android-master/badge.svg)
+![GitHub Actions](https://github.com/BornInApp/workflows/.github/workflows/android-master.yml/badge.svg)
 
 ## Code
 Using Android Studio 3.5 Beta 1, Kotlin, and gradle 4.10
