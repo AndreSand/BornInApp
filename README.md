@@ -1,10 +1,6 @@
 # KotlinLearningMap
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AndreSand_BornInApp&metric=alert_status)](https://sonarcloud.io/dashboard?id=AndreSand_BornInApp)
-![GitHub Actions](https://github.com/actions/BornInApp/workflows/android-master/badge.svg)
-![GitHub Actions](https://github.com/actions/BornInApp/workflows/.github/workflows/android-master.yml/badge.svg)
-
-![GitHub Actions](https://github.com/BornInApp/workflows/android-master/badge.svg)
-![GitHub Actions](https://github.com/BornInApp/workflows/.github/workflows/android-master.yml/badge.svg)
+[GITHUB-BADGE](https://github.com/AndreSand/BornInApp/workflows/android-master/badge.svg)
 
 [![Actions Status](https://github.com/AndreSand/BornInApp/workflows/android-master/badge.svg)](https://github.com/AndreSand/BornInApp/actions)
 [![Actions Status](https://github.com/AndreSand/BornInApp/workflows/android/badge.svg)](https://github.com/AndreSand/BornInApp/actions)
