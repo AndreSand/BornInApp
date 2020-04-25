@@ -1,4 +1,7 @@
 # KotlinLearningMap
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AndreSand_BornInApp&metric=alert_status)](https://sonarcloud.io/dashboard?id=AndreSand_BornInApp)
+![](https://github.com/actions/BornInApp/workflows/.github/workflows/android-master.yml/badge.svg)
+![](https://github.com/actions/BornInApp/workflows/android-master/badge.svg)
 
 ## Code
 Using Android Studio 3.5 Beta 1, Kotlin, and gradle 4.10
@@ -59,4 +62,3 @@ upload token cf25376c-9432-4b0b-9989-5048288f8675
 
 [testing tutorial](http://kuzzle.io/blog/2016/03/tips-to-use-travis-on-an-android-environment)
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AndreSand_BornInApp&metric=alert_status)](https://sonarcloud.io/dashboard?id=AndreSand_BornInApp)
