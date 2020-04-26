@@ -2,8 +2,8 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AndreSand_BornInApp&metric=alert_status)](https://sonarcloud.io/dashboard?id=AndreSand_BornInApp)
 [GITHUB-BADGE](https://github.com/AndreSand/BornInApp/workflows/android-master/badge.svg)
 
-[![Actions Status](https://github.com/AndreSand/BornInApp/workflows/android-master/badge.svg)](https://github.com/AndreSand/BornInApp/actions)
-[![Actions Status](https://github.com/AndreSand/BornInApp/workflows/android/badge.svg)](https://github.com/AndreSand/BornInApp/actions)
+[![Android-master Actions Status](https://github.com/AndreSand/BornInApp/workflows/android-master/badge.svg)](https://github.com/AndreSand/BornInApp/actions)
+[![Android Actions status](https://github.com/AndreSand/BornInApp/workflows/android/badge.svg)](https://github.com/AndreSand/BornInApp/actions)
 
 ## Code
 Using Android Studio 3.5 Beta 1, Kotlin, and gradle 4.10
