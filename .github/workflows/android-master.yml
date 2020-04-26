@@ -1,4 +1,4 @@
-name: Android Pull Request & Master CI
+name: android-master
 
 on:
   pull_request:
