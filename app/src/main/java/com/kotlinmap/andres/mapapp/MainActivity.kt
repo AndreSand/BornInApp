@@ -5,16 +5,16 @@ import android.content.Intent
 import android.location.Address
 import android.location.Geocoder
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.EditText
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
-import org.jetbrains.anko.toast
 import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(toolbar)
+//        setSupportActionBar(Toolbar)
         Log.v("borninapp", "MainActivity: getAppStore: " + getAppStore(this))
 
         // Login if is from Google Play Store
@@ -31,7 +31,11 @@ class MainActivity : AppCompatActivity() {
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Work in Progress", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
-            toast("borninapp" + "getAppStore: " + getAppStore(this))
+            Toast.makeText(
+                this,
+                "borninapp" + "getAppStore: " + getAppStore(this),
+                Toast.LENGTH_SHORT
+            )
             Log.v("borninapp", "MainActivity: getAppStore: " + getAppStore(this))
         }
 
@@ -80,7 +84,7 @@ class MainActivity : AppCompatActivity() {
                     edLocationName3
                 )
             )
-                toast("Fields cannot be empty!")
+                Toast.makeText(this, "Fields cannot be empty!", Toast.LENGTH_SHORT)
             else
                 startActivity(i)
         }
@@ -134,7 +138,7 @@ class MainActivity : AppCompatActivity() {
         } catch (ex: IOException) {
 
             ex.printStackTrace()
-            toast("error")
+            Toast.makeText(this, "error", Toast.LENGTH_SHORT)
         }
         return resLatLng
     }

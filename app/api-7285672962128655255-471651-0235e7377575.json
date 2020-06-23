@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "api-7285672962128655255-471651",
+  "private_key_id": "0235e737757520e8afa9e74d737e62a5c7ade589",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCVMzOtwxozTtZq\nw9x+WvePn76xMzebmOwZlx0EOBb0+dADD/haUzzhTBqnCX2qX5Qp6HkkICSXVsnZ\nHiWRvV5tEU5aJJkYdL8YjlDyow7XYtw1hLRARrcodY4bfEqvrhVddZ1Bgs4YDXvY\nrIRHWsi8wQ5cR75zu0bHSy6QO0/LUmx/+jNPyL8lcm8MWQwAC4+Ls9+Kj1EtqKZp\nX/5zwg2MwpBkjMISyvvq+Mg6WO9amlWNiYWn/xrVdXgtLD6/DUNcXNlNWqE98h4q\nJDnR41LGt+OOeZcDyaKuC3gn8j32oRqeKJo/MVrH37QAtPlvekZWuGtJ6TMXJjmX\nBZak+t93AgMBAAECggEADbd9MaVFaYspdlEBxVIaqXHPx8hu0oIezq7QZEdogObd\n+LIarJSI0n5l2DkspvcOOZjIWQm6ziO/VJPgyK3Rb73kEgXZrLXAWIMZA72kSylT\nwniBU9l3KaPpHTNyRbAqVwMi99dimDPWe3yc1Vc41kr6GtdztdMgC4l+GJTYs1dW\nxQImKB+7fd1k3gM2JNXZuVzqdWFlVDd+dxEHHkUvK38FMeccTbAhuoDFsRKZBGeB\nYu4b96CaHsjqEe55+MGEsdLyvOtJfY8ADIJ/U9UanWhd7tj7c9DOiPv9QjOXgFOs\nmF+Flhyqooti1XfZt8m5EacTTOpNVmoGUlVfMcvvwQKBgQDL1ERV1faPkz2Z93mh\nXYz5lAYHxVD/yYJi5bY4Lx8dWZgXi7VtriPAPaz7ab58Ey6IeFSnbPNRMk3/kwMi\nGa+M11tPoesE7fRURpD/IanLW8k4D76N4lQO5hStaCBOITVNjMLKhjxyHwBUIT3k\nWFJVpzZXL/iSVPISzvr3sYz8QQKBgQC7Y2fVzVuozPrXBMtpeK3Sx9hlQjN5d5o/\n3WRay4njBVHi2haxQp9tBYQo6HgzZ5OqBoi1kPRqYg2mwE5g3Y62GfNF7z8ZhoEj\nGaHziqdXtbLWuZoZ+MedWZInpGZutShnTI0CPE5ZxrSktAxdXyB7gfnBnhMeKxIx\ndYjseJNNtwKBgQCyRrlyPg9GaqlBhnOq0LEiBfb0Sv/aiXxyVap4H7beK+PcDEUm\nZl48oXUv/MAvs3NKx7x7J871YMNZ21KtO7wQurfRwbRWfm3qXEIr9FyXUnN/hj3L\nyX5t/Y1uUhmXXHJLnucszhYGVtkpvF1u4FU7N2JPBdUq4ANOshxOEsxWQQKBgBK1\nTvWShhcpN9XlvaUvDjOgDiO140u6PCUqJk3GSmLm8hDy8xcJbr9EsLgg1XdUXPK5\nqkZuTWidl31Rb8HN/OSDXL1bsHIM8rGdaoTVD/X6xvsXFqKHKu6ztZrNmAhvf7Qo\neV+Cw9PEud5Dt4RO7gBGrre8323AoRVdBamONC6rAoGAWvsmiwFfIhuTS2Wcn0sF\n1Iu5fbWY+vjBgtUBxKPbJS9K2fr1ZNLVGcUf4YuIbdhkNPXFwcLgd9xCs2So0Nkv\nXu80zs9EH80wwOhyg+Vof6gPMnViEDOd8EUIjRTg0UMMJpN0UCy4Pa9g1MJL46g8\nS9Pdo52q6xI4PLtqGk+0HiQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mymapapp-gradle-release@api-7285672962128655255-471651.iam.gserviceaccount.com",
+  "client_id": "101084116992546800114",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mymapapp-gradle-release%40api-7285672962128655255-471651.iam.gserviceaccount.com"
+}
