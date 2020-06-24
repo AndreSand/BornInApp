@@ -34,7 +34,7 @@ android {
 
         Integer bitriseBuildNumber = System.getenv("BITRISE_BUILD_NUMBER") as Integer
         // versionCode is check by Google Play Store, needs to increment
-        // BITRISE_BUILD_NUMBER=63 ./gradlew publishReleaseBundle
+        // BITRISE_BUILD_NUMBER=604 ./gradlew publishReleaseBundle
         versionCode bitriseBuildNumber ?: 1
         versionName "1.6" + bitriseBuildNumber
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
