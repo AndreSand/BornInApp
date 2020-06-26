@@ -32,11 +32,11 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
-            android:text="Enter locations to show on map"
+            android:fontFamily="@font/roboto_mono_light_italic"
+            android:text="Enter born locations to show on map and share with friends"
             android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="casual"
+            android:fontFamily="@font/roboto_mono_light_italic"
             android:text="Mom"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textSize="21sp"
@@ -58,19 +58,19 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView1"
             android:ellipsize="end"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="sans-serif-light"
             android:hint="Enter born location"
             android:inputType="textCapWords"
             android:maxLines="1"
             android:padding="8dp"
-            android:textColor="#ffffff"
-            android:textColorHint="#ffffff" />
+            android:textColor="#000000"
+            android:textColorHint="#A3A6A8"/>
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="casual"
+            android:fontFamily="@font/roboto_mono_light_italic"
             android:text="Dad"
             android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -84,19 +84,19 @@
             android:layout_below="@+id/textView2"
             android:layout_weight="2.86"
             android:ellipsize="end"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="sans-serif-light"
             android:hint="Enter born location"
             android:inputType="textCapWords"
             android:maxLines="1"
             android:padding="8dp"
-            android:textColor="#ffffff"
-            android:textColorHint="#ffffff" />
+            android:textColor="#000000"
+            android:textColorHint="#A3A6A8" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="casual"
+            android:fontFamily="@font/roboto_mono_light_italic"
             android:text="You"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textSize="21sp"
@@ -109,13 +109,13 @@
             android:layout_below="@+id/textView3"
             android:layout_weight="2.86"
             android:ellipsize="end"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="sans-serif-light"
             android:hint="Enter born location"
             android:inputType="textCapWords"
             android:maxLines="1"
             android:padding="8dp"
-            android:textColor="#ffffff"
-            android:textColorHint="#ffffff" />
+            android:textColor="#000000"
+            android:textColorHint="#A3A6A8" />
 
         <Button
             android:id="@+id/btGoToMap"
@@ -124,10 +124,9 @@
             android:layout_below="@+id/form_layout"
             android:layout_marginTop="70dp"
             android:background="@color/colorAccent"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="@font/roboto_mono_light_italic"
             android:gravity="center"
             android:padding="8dp"
-
             android:text="Show Map"
             android:textAlignment="center"
             android:textAllCaps="false"

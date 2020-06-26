@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
-        android:background="#A3A6A8">
+        android:background="#FFFFFF">
 <!--        android:background="#A1A4A6">-->
 <!--        android:background="#3C3F41">-->
 
